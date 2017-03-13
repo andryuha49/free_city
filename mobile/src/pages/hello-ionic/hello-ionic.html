@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Hello Ionic</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <h3>Welcome to your first Ionic app!</h3>
+
+  <p>
+    This starter project is our way of helping you get a functional app running in record time.
+  </p>
+  <p>
+    Follow along on the tutorial section of the Ionic docs!
+  </p>
+  <p>
+    <button ion-button color="primary" menuToggle>Toggle Menu</button>
+  </p>
+
+
+
+  <section class="example-section">
+    <md-checkbox class="example-margin" [(ngModel)]="checked">Checked</md-checkbox>
+    <md-checkbox class="example-margin" [(ngModel)]="indeterminate">Indeterminate</md-checkbox>
+  </section>
+
+  <section class="example-section">
+    <label class="example-margin">Align:</label>
+    <md-radio-group [(ngModel)]="align">
+      <md-radio-button class="example-margin" value="start">Start</md-radio-button>
+      <md-radio-button class="example-margin" value="end">End</md-radio-button>
+    </md-radio-group>
+  </section>
+
+</ion-content>
