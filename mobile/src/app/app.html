@@ -1,6 +1,12 @@
 <ion-menu [content]="content">
 
   <ion-header>
+    <div class="profile">
+      <img class="profile-picture" src="http://ionicframework.com/img/docs/mcfly.jpg" />
+      <h3 class="name">+380966290090</h3>
+    </div>
+
+
     <ion-toolbar>
       <ion-title>Pages</ion-title>
     </ion-toolbar>
@@ -8,8 +14,10 @@
 
   <ion-content>
     <ion-list>
-      <button ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
+
+      <button ion-item *ngFor="let item of pages" (click)="openPage(item)">
+        <ion-icon [name]="item.icon" item-left></ion-icon>
+        {{item.title}}
       </button>
     </ion-list>
   </ion-content>

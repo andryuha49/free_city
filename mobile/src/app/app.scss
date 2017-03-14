@@ -14,3 +14,40 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.action-sheets-basic-page {
+  .ion-md-share {
+    color: #ED4248;
+  }
+  .ion-md-arrow-dropright-circle {
+    color: #508AE4;
+  }
+  .ion-md-heart-outline {
+    color: #31D55F;
+  }
+  .action-sheet-cancel ion-icon,
+  .action-sheet-destructive ion-icon {
+    color: #757575;
+  }
+}
+
+.profile {
+  padding: 1em;
+}
+
+.profile::after {
+  content: "";
+  background: url("../assets/city_bg.png") no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 4em;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.profile .profile-picture {
+  border-radius: 50%;
+}

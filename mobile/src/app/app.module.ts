@@ -5,7 +5,7 @@ import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
 
-import { MaterialModule } from '@angular/material';
+//import { MaterialModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -15,8 +15,8 @@ import { MaterialModule } from '@angular/material';
     ListPage
   ],
   imports: [
-    IonicModule.forRoot(MyApp),
-    MaterialModule
+    IonicModule.forRoot(MyApp)//,
+    //MaterialModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

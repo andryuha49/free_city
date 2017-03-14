@@ -16,7 +16,7 @@ export class MyApp {
 
   // make HelloIonicPage the root (or first) page
   rootPage: any = HelloIonicPage;
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, component: any, icon: string}>;
 
   constructor(
     public platform: Platform,
@@ -26,8 +26,8 @@ export class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Hello Ionic', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage }
+      { title: 'Routes', component: HelloIonicPage, icon: 'bus' },
+      { title: 'Settings', component: ListPage, icon: 'settings' }
     ];
   }
 
